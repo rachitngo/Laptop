@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+  <title>Find your Laptop</title>
+
+ 
+  <div  margin: 35px 70px 50px 90px; >                
+  <center> <h4 class="display-4">We'll help you out in finding the best laptop for your need.</h4>
+   <!-- 
+    <select id="Stream" name="Stream" style= "width:200px" class="custom-select mb-3">
+    
+    <option selected>Select your Stream</option>
+    <option id="1" value="1">College of Engineering</option>
+    <option id="2" value="2">College of Business</option>
+    <option id="3" value="3">Medical Sciene</option>
+   
+  </select><br>
+-->
+
+ 
+    <select id="Major" name="Major" style= "width:200px" class="custom-select mb-3">
+    
+    <option selected>Select your major</option>
+
+    <option id="23" value="23">Aerospace Engineering</option>
+
+    <option id="50" value="51">Biology</option>
+    <option id="50" value="52">Biomedical Engineering</option>
+    <option id="40" value="40">Business</option>
+
+    <option id="23" value="23">Chemical Engineering</option>
+    <option id="22" value="22">Civil Engineering</option>
+
+    <option id="10" value="10">Computer Science</option>
+    <option id="30" value="30">Economics</option>
+    <option id="20" value="20">Electrical Engineering</option>
+    <option id="30" value="31">Finance</option>
+
+    <option id="21" value="21">Mechanical Engineering</option>
+    <option id="40" value="41">Management information system</option>
+
+    <option id="50" value="50">Nursing</option>
+    <option id="11" value="11">Physics</option>
+
+
+  </select>
+
+  <br>
+  <button id="submit" class="btn btn-secondary">
+    Submit Now
+  </button>
+  <div id="div">
+   
+     <h6 class="display-6"></h6> 
+  </div>
+</div>
+
+</center>
+  
+  
+  
+  <script>
+
+    document.getElementById("submit").addEventListener("click", function showOptions() {
+      console.log("HEY! ");
+    
+     
+      
+      var s = document.getElementById('Major');
+
+      var fruit = s[s.selectedIndex].id;
+      console.log("fruit")
+      if (fruit == 10) {
+        document.getElementById("div").innerHTML = '<div style= "background-color: rgba(255, 255, 255, 0.6);  margin: 35px 70px 50px 90px;" > <table class="table"><thead><tr><th>Laptop Name</th><th>Macbook Pro</th><th>Dell XPS</th><th>Think Pad</th></tr></thead><tbody><tr><td>Ram</td><td>Upto 16 GB</td><td>16 GB</td><td>16 GB</td></tr><tr><td>Storage</td><td>Upto 2 TB SSD (256 GB recommended)</td><td>512 GB SSD</td><td>512 GB SSD</td></tr><tr><td>Battery Life</td><td>12 Hours</td><td>8 Hours</td><td>10 Hours</td></tr><tr><td>Processor</td><td>Upto Intel i9 (i7 recommended)</td><td>Intel i7</td><td>Intel i7</td></tr><tr><td>Pricing</td><td><a href="https://www.apple.com/shop/buy-mac/macbook-pro" >Check Price</a></td><td><a href="https://pilot.search.dell.com/laptops/xps">Check Price</a></td><td><a href="https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/c/thinkpadx#compareSection">Check Price</a></td></tr></tbody></table></div>';
+        document.innerHTML = "Thanks for using our services. Have a great semester ahead!"
+      }
+      else if (fruit == 11) {
+        document.getElementById("div").innerHTML = '<div style= "background-color: rgba(255, 255, 255, 0.6);  margin: 35px 70px 50px 90px;" > <table class="table"><thead><tr><th>Laptop Name</th><th>Macbook Air/iPad Pro</th><th>HP Envy</th><th>Microsoft Surface Pro</th></tr></thead><tbody><tr><td>Ram</td><td>8 GB</td><td>8 GB</td><td>8 GB</td></tr><tr><td>Storage</td><td>256 GB SSD</td><td>256 GB SSD</td><td>256 GB SSD</td></tr><tr><td>Battery Life</td><td>12 Hours</td><td>10 Hours</td><td>9 Hours</td><tr><td>Pricing</td><td><a href="https://www.apple.com/shop/buy-mac/macbook-air" >Check Price</a></td><td><a href="https://bit.ly/2TGrue6">Check Price</a></td><td><a href="https://www.microsoft.com/en-us/surface/devices/compare-devices">Check Price</a></td></tr></tbody></table></div>';
+      }
+      else if (fruit == 20) {
+        document.getElementById("div").innerHTML = '<div style= "background-color: rgba(255, 255, 255, 0.6);  margin: 35px 70px 50px 90px;" > <table class="table"><thead><tr><th>Laptop Name</th><th>Razer Blade Pro</th><th>Dell XPS</th><th>Think Pad</th></tr></thead><tbody><tr><td>Ram</td><td>32 GB</td><td>16 GB</td><td>16 GB</td></tr><tr><td>Storage</td><td>Upto 2 TB SSD</td><td>512 GB SSD</td><td>512 GB SSD</td></tr><tr><td>Battery Life</td><td>4 Hours</td><td>8 Hours</td><td>10 Hours</td></tr></tbody></table></div>';
+      }
+      else if (fruit == 21) {
+        document.getElementById("div").innerHTML = '<div style= "background-color: rgba(255, 255, 255, 0.6);  margin: 35px 70px 50px 90px;" > <table class="table"><thead><tr><th>Laptop Name</th><th>Razer Blade Pro</th><th>Dell XPS</th><th>Think Pad</th></tr></thead><tbody><tr><td>Ram</td><td>32 GB</td><td>16 GB</td><td>16 GB</td></tr><tr><td>Storage</td><td>Upto 2 TB SSD</td><td>512 GB SSD</td><td>512 GB SSD</td></tr><tr><td>Battery Life</td><td>4 Hours</td><td>8 Hours</td><td>10 Hours</td></tr></tbody></table></div>';
+      }
+      else if (fruit == 22) {
+        document.getElementById("div").innerHTML = '<div style= "background-color: rgba(255, 255, 255, 0.6);  margin: 35px 70px 50px 90px;" > <table class="table"><thead><tr><th>Laptop Name</th><th>Razer Blade Pro</th><th>Dell XPS</th><th>Think Pad</th></tr></thead><tbody><tr><td>Ram</td><td>32 GB</td><td>16 GB</td><td>16 GB</td></tr><tr><td>Storage</td><td>Upto 2 TB SSD</td><td>512 GB SSD</td><td>512 GB SSD</td></tr><tr><td>Battery Life</td><td>4 Hours</td><td>8 Hours</td><td>10 Hours</td></tr></tbody></table></div>';
+      }
+      else if (fruit == 23) {
+        document.getElementById("div").innerHTML = '<div style= "background-color: rgba(255, 255, 255, 0.6);  margin: 35px 70px 50px 90px;" > <table class="table"><thead><tr><th>Laptop Name</th><th>Razer Blade Pro</th><th>Dell XPS</th><th>Think Pad Series</th></tr></thead><tbody><tr><td>Ram</td><td>32 GB</td><td>16 GB</td><td>16 GB</td></tr><tr><td>Storage</td><td>Upto 2 TB SSD</td><td>512 GB SSD</td><td>512 GB SSD</td></tr><tr><td>Battery Life</td><td>4 Hours</td><td>8 Hours</td><td>10 Hours</td><tr><td>Pricing</td><td><a href="https://www.razer.com/compare?products=Blade-Stealth-L1-Base,Blade-C2-Base,Blade-Pro-F2-Base" >Check Price</a></td><td><a href="https://pilot.search.dell.com/laptops/xps">Check Price</a></td><td><a href="https://www.lenovo.com/us/en/business-laptops">Check Price</a></td></tr></tbody></table></div>';
+      }
+      else if (fruit == 30) {
+        document.getElementById("div").innerHTML = '<div style= "background-color: rgba(255, 255, 255, 0.6);  margin: 35px 70px 50px 90px;" > <table class="table"><thead><tr><th>Laptop Name</th><th>Macbook Air</th><th>HP Envy</th><th>Microsoft Surface Pro</th></tr></thead><tbody><tr><td>Ram</td><td>8 GB</td><td>8 GB</td><td>8 GB</td></tr><tr><td>Storage</td><td>256 GB SSD</td><td>256 GB SSD</td><td>256 GB SSD</td></tr><tr><td>Battery Life</td><td>12 Hours</td><td>10 Hours</td><td>9 Hours</td><tr><td>Pricing</td><td><a href="https://www.apple.com/shop/buy-mac/macbook-air" >Check Price</a></td><td><a href="https://bit.ly/2TGrue6">Check Price</a></td><td><a href="https://www.microsoft.com/en-us/surface/devices/compare-devices">Check Price</a></td></tr></tbody></table></div>';
+      }
+      else if (fruit == 40) {
+        document.getElementById("div").innerHTML = '<div style= "background-color: rgba(255, 255, 255, 0.6);  margin: 35px 70px 50px 90px;" > <table class="table"><thead><tr><th>Laptop Name</th><th>Macbook Air</th><th>HP Envy 360x</th><th>Lenovo Yoga</th></tr></thead><tbody><tr><td>Ram</td><td>8 GB</td><td>8 GB</td><td>8 GB</td></tr><tr><td>Storage</td><td>256 GB SSD</td><td>256 GB SSD</td><td>256 GB SSD</td></tr><tr><td>Battery Life</td><td>12 Hours</td><td>10 Hours</td><td>9 Hours</td></tr><tr><td>Pricing</td><td><a href="https://www.apple.com/shop/buy-mac/macbook-air" >Check Price</a></td><td><a href="https://bit.ly/2TGrue6">Check Price</a></td><td><a href="https://lnv.gy/2D1usVp">Check Price</a></td></tr></tbody></table></div>';
+      }
+      else if (fruit == 50) {
+        document.getElementById("div").innerHTML = '<div style= "background-color: rgba(255, 255, 255, 0.6);  margin: 35px 70px 50px 90px;" > <table class="table"><thead><tr><th>Laptop Name</th><th>Macbook Air</th><th>Dell XPS 13</th><th>Microsoft Surface Pro</th></tr></thead><tbody><tr><td>Ram</td><td>8 GB</td><td>8 GB</td><td>8 GB</td></tr><tr><td>Storage</td><td>256 GB SSD</td><td>256 GB SSD</td><td>256 GB SSD</td></tr><tr><td>Battery Life</td><td>12 Hours</td><td>10 Hours</td><td>9 Hours</td></tr><tr><td>Pricing</td><td><a href="https://www.apple.com/shop/buy-mac/macbook-air" >Check Price</a></td><td><a href="https://pilot.search.dell.com/laptops/xps">Check Price</a></td><td><a href="https://www.microsoft.com/en-us/surface/devices/compare-devices">Check Price</a></td></tr></tbody></table></div>';
+      }
+      
+     
+
+    })
+
+  </script>
+
+<style>
+                
+    body { background-image: url("A4.jpg"); }
+
+</html>
